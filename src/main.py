@@ -51,7 +51,7 @@ class Piece(pygame.sprite.Sprite):
 
 
 def draw_piece(position, piece, init, promo, promo_pos):
-    location = r'C:\Users\Crgla\Desktop\Personal Coding Projects\chess-engine\assets\{piece}.png'.format(piece=piece)
+    location = r'.\assets\{piece}.png'.format(piece=piece)
     image = pygame.image.load(location)
     newimage = pygame.transform.smoothscale(image, (100, 100))
     img_rect = newimage.get_rect(center=(position[0] + 50, position[1] + 50))
